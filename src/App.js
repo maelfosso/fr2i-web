@@ -1,22 +1,20 @@
+import { Container } from 'semantic-ui-react'
 import './App.css';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import SocketIOContext, {socket} from './utils/socket.io';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SocketIOContext.Provider value={socket}>
+      <div>
+        <Nav />
+        <Container>
+          <Home />
+        </Container>
+      </div>
+    </SocketIOContext.Provider>
   );
 }
 
