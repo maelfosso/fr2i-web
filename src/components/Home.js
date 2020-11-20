@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import { Icon, Label, Menu, Table } from 'semantic-ui-react'
 import SocketIOContext from '../utils/socket.io';
 
+const { REACT_APP_API_URL, REACT_APP_API_PORT } = process.env;
+
 const Home = () => {
   const socket = useContext(SocketIOContext);
 
@@ -33,7 +35,7 @@ const Home = () => {
   }, [messageCount]);
 
   const loadData = async () => {
-    const response = await fetch('http://127.0.0.1:4000/api/data');
+    const response = await fetch(`http://${REACT_APP_API_URL}:${REACT_APP_API_PORT}/api/data`);
     const json = await response.json();
     console.log('[DATA] ', json, json.data);
     setData(json.data);
