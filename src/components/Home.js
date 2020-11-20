@@ -55,7 +55,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>HOME</h1>
+      <h1>Data</h1>
       <Table celled>
         <Table.Header>
           <Table.Row>
