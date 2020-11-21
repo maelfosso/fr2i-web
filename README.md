@@ -18,7 +18,6 @@ This is the web application of the platform. As features, it only display real-t
 
 [Live Demo Link](https://maelfosso.github.io/fr2i-web)
 
-
 ## Getting Started
 
 ### Prerequisites
