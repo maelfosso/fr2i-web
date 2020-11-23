@@ -41,7 +41,7 @@ Download it [here](https://github.com/maelfosso/fr2i-api) and follow the instruc
 
 As indicated up there, it's possible to run it using `docker-compose`.
 You will not have to download the source code to run it.
-Kindly follow this [link][http://github.com/maelfosso/fr2i-competition] and follow the instruction to deploy the whole platform.
+Kindly follow this [link](http://github.com/maelfosso/fr2i-competition) and follow the instruction to deploy the whole platform.
 
 ## Authors
 
